@@ -27,7 +27,7 @@ pipeline {
                 }
             }
     	}
-   	stage('Deliver') {
+   	 stage('Deliver') {
             agent {
                 docker {
                     image 'cdrx/pyinstaller-linux:python2'
@@ -43,7 +43,8 @@ pipeline {
             }
         }
     }
-}  
+}
+
 	
  
 		
