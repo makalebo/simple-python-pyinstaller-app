@@ -40,6 +40,7 @@ pipeline {
                 success {
                     archiveArtifacts 'dist/add2vals'
                     sh 'python  sources/add2vals.py 5 6 > index.html'
+		    sh 'echo lllooooool >> index.html'
 		 }
             }
         }
